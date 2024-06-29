@@ -1,0 +1,130 @@
+.home__content {
+	grid-template-columns:  repeat(1, 1fr);
+	padding-top: 5.5rem;
+	column-gap: 2rem;
+	align-items: center;
+  }
+  
+  .home__container {
+	row-gap: 7rem;
+  }
+  
+
+  .home__title {
+	font-weight: bold;
+	margin-bottom: -25px;
+  }
+  .home__hand {
+	width: 38px;
+	height: 38px;
+	margin-left: 0.4rem;
+  }
+  
+  .home__subtitle {
+	position: relative;
+	font-size: var(--h3-font-size);
+	padding-left: 4.6rem;
+	font-weight: var(--font-normal);
+	margin-bottom: -1px;
+  }
+  
+  .home__subtitle::before {
+	content: "";
+	position: absolute;
+	width: 65px;
+	height: 1px;
+	background-color: var(--text-color);
+	left: 0;
+	top: 1rem;
+  }
+  .home__description {
+	max-width: 400px;
+	margin-bottom: var(--mb-3);
+  }
+  
+  .home__img {
+	position: relative;
+	left: 60%;
+	background: url(../../assets/profiles/manjesh.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	box-shadow: inset 0 0 0 9px rgba(61, 61, 61, 0.3);
+	order: 1;
+	justify-self: center;
+	width: 300px;
+	height: 300px;
+	animation: profile__animate 8s ease-in-out infinite 1s;
+  }
+  
+  @keyframes profile__animate {
+	0% {
+	  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+	50% {
+	  border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+	100% {
+	  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+  }
+  
+  .home__scroll {
+	margin-left: 9.25rem;
+  }
+  .wheel {
+	animation: scroll 2s ease infinite;
+  }
+  @keyframes scroll {
+	0% {
+	  transform: translateY(0);
+	}
+	30% {
+	  transform: translateY(3.75rem);
+	}
+  }
+  .home__scroll-name {
+	color: var(--title-color);
+	font-weight: var(--font-medium);
+	margin-right: var(--mb-0-25);
+	margin-left: 2px;
+  }
+  .home__scroll-arrow {
+	font-size: 1.25rem;
+	color: var(--title-color);
+  }
+  
+  @media screen and (max-width: 992px) {
+	.home__content {
+	  grid-template-columns: 100px repeat(2, 1fr);
+	  column-gap: 1.25rem;
+	}
+	.home__hand {
+	  width: 26px;
+	  height: 26px;
+	}
+	.home__subtitle {
+	  padding-left: 3.75rem;
+	  margin-bottom: var(--mb-1);
+	}
+	.home__subtitle::before {
+	  width: 42px;
+	  top: 0.8rem;
+	}
+  
+	.home__description {
+	  max-width: initial;
+	  margin-bottom: var(--mb-2-5);
+	}
+	.home__img {
+	  height: 250px;
+	  width: 250px;
+	  box-shadow: inset 0 0 0 9px rgba(61, 61, 61, 0.3);
+	}
+	.home__scroll{
+	  margin-left: 7.5rem;
+	}
+  }
+  
+ 
+  

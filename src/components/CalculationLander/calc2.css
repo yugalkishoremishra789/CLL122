@@ -1,0 +1,50 @@
+.calcualtion__grid{
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 100rem 100rem repeat(3, 3fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.sticho__entry{
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.kref__entry{
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.result__grid{
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    left: 38%;
+}
+
+.btn__click{
+    padding: 10px;
+    width: 5em;
+    justify-content: center;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h6{
+    text-align: left;
+    margin-left: 2rem;
+}
